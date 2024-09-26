@@ -7,7 +7,7 @@ async function fetchPokemonData(pokemonName) {
         throw new Error('Error fetching data', alert("Pokemon not found"));
     }
 }
-
+// change with user input 
 document.getElementById("pokemon-form").addEventListener('submit', async (event) => {
     event.preventDefault();
 
@@ -18,8 +18,9 @@ document.getElementById("pokemon-form").addEventListener('submit', async (event)
             const data = await fetchPokemonData(pokemonName);
             const pokeInfoElement = document.getElementById("pokemon-info");
             pokeInfoElement.innerHTML = `
-                <img src="${data.sprites.front_default}" style="width: 200px; height: 200px;" />
                 <h2>Name: ${data.name.toUpperCase()}</h2>
+                <img src="${data.sprites.front_default}" style="width: 300px; height: 300px;" />
+                
                 <p>Pokemon ID: ${data.id}</p>
                 <p>Pokemon Type: ${data.types[0].type.name}</p>
                 <p>Pokemon Ability: ${data.abilities[0].ability.name}</p>
@@ -38,16 +39,3 @@ document.getElementById("pokemon-form").addEventListener('submit', async (event)
     pokemonNameInput.value = '';
 });
 
-
-// const jumbotron = document.querySelector('.jumbotron');
-// let backgroundPosition = 0;
-// function animateBackground() {
-//     backgroundPosition -= 0.5; 
-//     jumbotron.style.backgroundPosition = `0 ${backgroundPosition}px`;
-//     if (backgroundPosition <= -jumbotron.clientHeight) {
-//         backgroundPosition = 0; 
-//     }
-//     requestAnimationFrame(animateBackground);
-// }
-
-// animateBackground();

@@ -5,6 +5,15 @@ body {
   padding: 0;
   background: url('images/home_backgound.jpeg') no-repeat center center fixed;
   background-size: cover;
+  background-color: #0e0e0e;
+}
+
+@media (max-width: 768px) {
+  body {
+    background-image: url('images/mewtwo_background.jpg');
+    background-size: contain;
+    background-color: #0e0e0e;
+  }
 }
 
 .jumbotron {
@@ -23,13 +32,12 @@ body {
   top: 0;
   right: 0;
   width: 100%;
-  color:#0e0e0e
+  color:#0e0e0e;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1000;
 }
 
-.navbar a {
-  /* justify-content: center; */
-  /* display: flex; */
-  /* justify-content: flex-start; */
+.navbar a { 
   margin-left: 20px;
   color: #e0d7d7;
   text-decoration: none;
@@ -41,20 +49,39 @@ body {
   text-emphasis-color: white;
   display: flex;
   justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 768px) {
+  .nav-list {
+    justify-content: space-around;
+  }
+
+  .navbar a{
+    margin-left: 10px;
+  }
+  
 }
 
 .container {
   color: #e3dbdb;
   max-width: 800px;
   margin: 20px auto;
-  padding: 20px;
+  padding: 45px;
   text-align: center;
   border-radius: 5px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);  
   /* background-color: rgba(0, 0, 0, 0.5);  */
 }
 
+@media (max-width: 768px) {
+  .container {
+    padding: 10px;
+  }
+}
+
 .carousel {
+  padding: 20px;
   background-color: rgba(0, 0, 0, 0.5);
 }
 
@@ -92,12 +119,11 @@ h1 {
   background-color: crimson;
 
 }
+
+
 .all_poke {
+  display: flex;
   justify-content: center;
+  size: auto;
 }
 
-/* .all_poke:hover {
-  transform: scale(5.5)
-  curser
-
-} */

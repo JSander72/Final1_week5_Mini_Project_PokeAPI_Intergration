@@ -25,6 +25,7 @@ document.getElementById("pokemon-form").addEventListener('submit', async (event)
                 <p>Pokemon Ability: ${data.abilities[0].ability.name}</p>
                 <p>Height: ${data.height} ft</p>
                 <p>Weight: ${data.weight} lbs</p>
+                <p>Stats: ${data.statistic} </p>
             `;
             console.log(data);
         } catch (error) {
@@ -34,3 +35,18 @@ document.getElementById("pokemon-form").addEventListener('submit', async (event)
         console.error('Input element not found');
     }
 });
+
+
+
+const jumbotron = document.querySelector('.jumbotron');
+let backgroundPosition = 0;
+function animateBackground() {
+    backgroundPosition -= 0.5; 
+    jumbotron.style.backgroundPosition = `0 ${backgroundPosition}px`;
+    if (backgroundPosition <= -jumbotron.clientHeight) {
+        backgroundPosition = 0; 
+    }
+    requestAnimationFrame(animateBackground);
+}
+
+animateBackground();

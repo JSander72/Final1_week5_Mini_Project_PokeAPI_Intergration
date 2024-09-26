@@ -1,4 +1,5 @@
 body {
+    color: #e3dbdb;
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
@@ -6,8 +7,26 @@ body {
     background-size: cover;
     text-align: center;
   }
+.jumbotron {
+    background: url('images/bulbasaur_background.png') repeat center;
+    background-size: auto;
+    color: #cfc3c3;
+    text-align: center;
+    padding: 10px;
+    font-weight: bold;
+    border: 1px solid black; 
+}
+.navbar {
+    justify-content: end;
+    background: url('images/bulbasaur_background.png') no-repeat center;
+    color: #cfc3c3;
+    text-align: center;
+    padding: 10px;
+ 
+}
 
   .container {
+    color: #e3dbdb;
     max-width: 800px;
     margin: 20px auto;
     padding: 20px;
@@ -18,16 +37,17 @@ body {
 
   .title {
     text-align: center;
-    color: #333;
+    color: #e3dbdb;
     
   }
 
   h1 {
     text-align: center;
-    color: #333;
+    color: #dad7d7;
   }
 
   #pokemon-info {
+    color: #e3dbdb;
     margin-top: 20px;
     padding: 20px;
     text-align: center;

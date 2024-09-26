@@ -11,17 +11,35 @@
 </head>
 
 <body>
-    <header></header>
-    <div class="jumbotron p-5 mb-4 bg-light rounded-3"></div>
-        <div class="title container py-5">
+    <nav class="navbar">
+        <ul class="navbar navbar-expand-lg navbar-light bg-light">
+            <li class="nav-item">
+                <a class="nav-link" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Pokemon</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">About</a>
+            </li>
+        <form id="pokemon-form">
+            <label for="search-pokemon">Who are you searching for?</label>
+            <input type="text" id="search-pokemon" name="search-pokemon">
+            <button id="search-button" type="submit">Search</button>
+        </form>
+    </nav>
+
+    <div class="jumbotron bg-light rounded-3">
+        <div class="title container">
             <h1 class="display-5 fw-bold">Pokemon Gaming Cards</h1>
-            <p class="col-md-8 fs-4">
+            <p class="">
                 Using a series of utilities, you can create this jumbotron, just
                 like the one in previous versions of Bootstrap. Check out the
                 examples below for how you can remix and restyle it to your liking.
             </p>
         </div>
     </div>
+
     <div id="pokemonCarousel" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
             <div class="carousel-item active">
@@ -39,7 +57,7 @@
                 </div>
             </div>
             <div class="carousel-item">
-                <div class="container"style="max-width: 19rem;">
+                <div class="container" style="max-width: 19rem;">
                     <div class="row">
                         <div class="col">
                             <div class="header_card" style="width: 18rem;">
@@ -90,19 +108,18 @@
             <span class="visually-hidden">Next</span>
         </button>
     </div>
+
     <div class="search container">
-        <h1>Pokemon Gaming Card</h1>
+        <h1>Pokemon Search</h1>
         <div id="pokemon-info">
             <form id="pokemon-form">
                 <label for="search-pokemon">Who are you searching for?</label>
                 <input type="text" id="search-pokemon" name="search-pokemon">
                 <button id="search-button" type="submit">Search</button>
-                
-                
             </form>
         </div>
     </div>
-    <footer></footer>
+
     <script src="PokeAPI.js"></script>
 </body>
 

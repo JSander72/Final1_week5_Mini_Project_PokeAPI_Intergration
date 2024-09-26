@@ -11,25 +11,23 @@
 </head>
 
 <body>
-    <nav class="navbar">
-        <ul class="navbar navbar-expand-lg navbar-light bg-light">
-            <li class="nav-item">
-                <a class="nav-link" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Pokemon</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">About</a>
-            </li>
-        <form id="pokemon-form">
-            <label for="search-pokemon">Who are you searching for?</label>
-            <input type="text" id="search-pokemon" name="search-pokemon">
-            <button id="search-button" type="submit">Search</button>
-        </form>
-    </nav>
-
-    <div class="jumbotron bg-light rounded-3">
+    <nav class="container">
+        <div class="navbar">
+            <ul class="nav-list">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Pokemon</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">About</a>
+                </li>
+            </ul>
+        </div>   
+       
+    </nav>  
+    <div class="container"><div class="jumbotron bg-light rounded-3">
         <div class="title container">
             <h1 class="display-5 fw-bold">Pokemon Gaming Cards</h1>
             <p class="">
@@ -38,7 +36,8 @@
                 examples below for how you can remix and restyle it to your liking.
             </p>
         </div>
-    </div>
+    </div>     
+             
 
     <div id="pokemonCarousel" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
@@ -109,7 +108,7 @@
         </button>
     </div>
 
-    <div class="search container">
+    <div class="">
         <h1>Pokemon Search</h1>
         <div id="pokemon-info">
             <form id="pokemon-form">

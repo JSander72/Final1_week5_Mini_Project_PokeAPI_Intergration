@@ -1,29 +1,100 @@
 body {
-    color: #e3dbdb;
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background: url('images/home_backgound.jpeg') no-repeat center;
-    background-size: cover;
-    text-align: center;
-  }
+  color: #e3dbdb;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: url('images/home_backgound.jpeg') no-repeat center center fixed;
+  background-size: cover;
+}
+
 .jumbotron {
-    background: url('images/bulbasaur_background.png') repeat center;
-    background-size: auto;
-    color: #cfc3c3;
-    text-align: center;
-    padding: 10px;
-    font-weight: bold;
-    border: 1px solid black; 
+  background-color: rgba(0, 0, 0, 0.5); /* Add a semi-transparent background */
+  text-align: center;
+  padding: 10px;
+  font-weight: bold;
+  border: 1px solid black; 
 }
+
+
 .navbar {
-    justify-content: end;
-    background: url('images/bulbasaur_background.png') no-repeat center;
-    color: #cfc3c3;
-    text-align: center;
-    padding: 10px;
- 
+  /* align-items: end; */
+  padding: 10px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  color:#0e0e0e
 }
+
+.navbar a {
+  /* display: flex; */
+  /* justify-content: flex-start; */
+  margin-left: 20px;
+  color: #e0d7d7;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.nav-list {
+  color: white;
+  text-emphasis-color: white;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.container {
+  color: #e3dbdb;
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  text-align: center;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);  
+}
+
+.title {
+  text-align: center;
+  color: #e3dbdb;
+}
+
+h1 {
+  text-align: center;
+  color: #dad7d7;
+}
+
+#pokemon-info {
+  color: #e3dbdb;
+  margin-top: 20px;
+  padding: 20px;
+  text-align: center;
+  /* background-color: #f9f9f9; */
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.nav_search {
+  justify-content: end;
+}
+
+.navbar {
+  align-items: end;
+  padding: 10px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  color:#0e0e0e
+}
+
+.navbar a {
+  display: flex;
+  justify-content: flex-start;
+  margin-left: 20px;
+  color: #0e0e0e;
+  text-decoration: none;
+  font-weight: bold;
+}
+
 
   .container {
     color: #e3dbdb;
@@ -32,7 +103,8 @@ body {
     padding: 20px;
     text-align: center;
     border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);  
+   
   }
 
   .title {
@@ -55,3 +127,5 @@ body {
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   }
+
+ 

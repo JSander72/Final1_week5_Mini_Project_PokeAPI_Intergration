@@ -34,19 +34,20 @@ document.getElementById("pokemon-form").addEventListener('submit', async (event)
     } else {
         console.error('Input element not found');
     }
+
+    pokemonNameInput.value = '';
 });
 
 
+// const jumbotron = document.querySelector('.jumbotron');
+// let backgroundPosition = 0;
+// function animateBackground() {
+//     backgroundPosition -= 0.5; 
+//     jumbotron.style.backgroundPosition = `0 ${backgroundPosition}px`;
+//     if (backgroundPosition <= -jumbotron.clientHeight) {
+//         backgroundPosition = 0; 
+//     }
+//     requestAnimationFrame(animateBackground);
+// }
 
-const jumbotron = document.querySelector('.jumbotron');
-let backgroundPosition = 0;
-function animateBackground() {
-    backgroundPosition -= 0.5; 
-    jumbotron.style.backgroundPosition = `0 ${backgroundPosition}px`;
-    if (backgroundPosition <= -jumbotron.clientHeight) {
-        backgroundPosition = 0; 
-    }
-    requestAnimationFrame(animateBackground);
-}
-
-animateBackground();
+// animateBackground();

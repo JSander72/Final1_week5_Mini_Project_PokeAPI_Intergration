@@ -18,11 +18,13 @@ document.getElementById("pokemon-form").addEventListener('submit', async (event)
             const data = await fetchPokemonData(pokemonName);
             const pokeInfoElement = document.getElementById("pokemon-info");
             pokeInfoElement.innerHTML = `
-                <h2>${data.name}</h2>
-                <img src="${data.sprites.front_default}" />
-                <h3>${data.abilities[0].ability.name}</h3>
-                <p>Height: ${data.height}</p>
-                <p>Weight: ${data.weight}</p>
+                <img src="${data.sprites.front_default}" style="width: 200px; height: 200px;" />
+                <h2>Name: ${data.name.toUpperCase()}</h2>
+                <p>Pokemon ID: ${data.id}</p>
+                <p>Pokemon Type: ${data.types[0].type.name}</p>
+                <p>Pokemon Ability: ${data.abilities[0].ability.name}</p>
+                <p>Height: ${data.height} ft</p>
+                <p>Weight: ${data.weight} lbs</p>
             `;
             console.log(data);
         } catch (error) {

@@ -2,55 +2,108 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Pikachu Information</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      background-color: #f0f0f0;
-    }
-
-    .container {
-      max-width: 800px;
-      margin: 20px auto;
-      padding: 20px;
-      background-color: #fff;
-      border-radius: 5px;
-      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    }
-
-    h1 {
-      text-align: center;
-      color: #333;
-    }
-
-    #pokemon-info {
-      margin-top: 20px;
-      padding: 20px;
-      background-color: #f9f9f9;
-      border-radius: 5px;
-      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    }
-  </style>
+    <meta charset="UTF-8">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="PokeAPI.css">
+    <title>Pokemon Information Search</title>
 </head>
 
 <body>
-  <div class="container">
-    <h1>Pokemon Gaming Card</h1>
-    <div id="pokemon-info"></div>
-
-    <form id="pokemon-form">
-      <label for="search-pokemon">Who are you searching for?</label>
-      <input type="text" id="search-pokemon" name="search-pokemon">
-      <button type="submit">Search</button>
-    </form>
-  </div>
-  <script src="PokeAPI.js"></script>
+    <header></header>
+    <div class="jumbotron p-5 mb-4 bg-light rounded-3"></div>
+        <div class="title container py-5">
+            <h1 class="display-5 fw-bold">Pokemon Gaming Cards</h1>
+            <p class="col-md-8 fs-4">
+                Using a series of utilities, you can create this jumbotron, just
+                like the one in previous versions of Bootstrap. Check out the
+                examples below for how you can remix and restyle it to your liking.
+            </p>
+        </div>
+    </div>
+    <div id="pokemonCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="container" style="max-width: 18rem;">
+                    <div class="row">
+                        <div class="col">
+                            <div class="header_card" style="width: 18rem;">
+                                <img src="images/pokemon_eevee_vaporeon.png" class="card-img-top" alt="Pikachu">
+                                <div class="card-body">
+                                    <h4 class="card-title">Vaporeon</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="container"style="max-width: 19rem;">
+                    <div class="row">
+                        <div class="col">
+                            <div class="header_card" style="width: 18rem;">
+                                <img src="images/pokemon_bulbasaur.png" class="card-img-top" alt="Bulbasaur">
+                                <div class="card-body">
+                                    <h4 class="card-title">Bulbasaur</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="container" style="max-width: 18rem;">
+                    <div class="row">
+                        <div class="col">
+                            <div class="header_card" style="width: 18rem;">
+                                <img src="images/pokemon_charmander.png" class="card-img-top" alt="Charmander">
+                                <div class="card-body">
+                                    <h4 class="card-title">Charmander</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="container" style="max-width: 19rem;">
+                    <div class="row">
+                        <div class="col">
+                            <div class="header_card" style="width: 18rem;">
+                                <img src="images/pokemon_squirtle.png" class="card-img-top" alt="Squirtle">
+                                <div class="card-body">
+                                    <h4 class="card-title">Squirtle</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#pokemonCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#pokemonCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <div class="search container">
+        <h1>Pokemon Gaming Card</h1>
+        <div id="pokemon-info">
+            <form id="pokemon-form">
+                <label for="search-pokemon">Who are you searching for?</label>
+                <input type="text" id="search-pokemon" name="search-pokemon">
+                <button id="search-button" type="submit">Search</button>
+                
+                
+            </form>
+        </div>
+    </div>
+    <footer></footer>
+    <script src="PokeAPI.js"></script>
 </body>
 
 </html>
